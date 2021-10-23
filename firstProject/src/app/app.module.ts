@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { TodosComponent } from './MyComponents/todos/todos.component';
 import { ServerComponent } from './MyComponents/server/server.component';
 import { StopwatchComponent } from './MyComponents/stopwatch/stopwatch.component';
+import { ServersComponent } from './MyComponents/servers/servers.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { StopwatchComponent } from './MyComponents/stopwatch/stopwatch.component
     AppComponent,
     TodosComponent,
     ServerComponent,
-    StopwatchComponent
+    StopwatchComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+h3 {
+  color: blue;
+}
+app-todos {
+  color: greenyellow;
+}
+app-server {
+    color: yellowgreen;
+  }
+.col-xs-12 {
+  padding: 80px;
+  background-color: rebeccapurple;
+  border: 1px solid red;
+}
