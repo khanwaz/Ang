@@ -1,1 +1,27 @@
 <p>Stop Watch works!</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Stop Watch</h1>
+      <button class="btn btn-dark" (click)="onStartTime()">Start</button>
+      <p class="startTime" id="startTime">
+        <strong>{{ startTime }}</strong>
+      </p>
+      <hr />
+      <button class="btn btn-dark" (click)="onStopTime()">Stop</button>
+      <p>
+        <strong>{{ endTime }}</strong>
+      </p>
+      <hr />
+      <button class="btn btn-dark" (click)="OnResetTime()">Reset</button>
+      <hr />
+      <div class="alert alert-success" role="alert">
+        <label><strong>Duration</strong></label>
+        <p>
+          The duaration of the Stop Watch : <strong>{{ duration }}</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

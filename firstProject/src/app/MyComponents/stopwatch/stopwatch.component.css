@@ -1,0 +1,11 @@
+.btn {
+  padding: 1px;
+}
+.btn-primary {
+  padding: 1px;
+}
+.col-xs-12 {
+  padding: 8px;
+  background-color: rgb(67, 117, 71);
+  border: 1px solid red;
+}

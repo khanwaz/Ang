@@ -1,14 +1,8 @@
 h3 {
   color: blue;
 }
-app-todos {
-  color: greenyellow;
-}
-app-server {
-    color: yellowgreen;
-  }
 .col-xs-12 {
   padding: 80px;
-  background-color: rebeccapurple;
+  background-color: rgb(111, 134, 136);
   border: 1px solid red;
 }
