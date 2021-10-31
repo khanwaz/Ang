@@ -41,3 +41,52 @@
     </div>
   </div>
 </div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <p>
+        <ngb-alert [dismissible]="false">
+          <strong>Warning!</strong>Add A button which says 'Display Details'
+        </ngb-alert>
+      </p>
+      <p>
+        <ngb-alert [dismissible]="false">
+          <strong>Warning!</strong>Add a paragraph with any content of your choice (e.g. 'Secret Password = tuna')
+        </ngb-alert>
+      </p>
+      <p>
+        <ngb-alert [dismissible]="false">
+          <strong>Warning!</strong> Toggle the displaying of that paragraph with the button created in the first step.
+        </ngb-alert>
+      </p>
+      <p>
+        <ngb-alert [dismissible]="false">
+          <strong>Warning!</strong>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)
+        </ngb-alert>
+      </p>
+      <p>
+        <ngb-alert [dismissible]="false">
+          <strong>Warning!</strong>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)
+        </ngb-alert>
+      </p>
+      <button 
+        class="btn btn-primary"
+        (click)="onDisplay()"
+      >
+      Display Details </button>
+      <hr>
+      <p *ngIf ="showPara" >
+        <ngb-alert type = 'success'[dismissible]="false">
+          <strong>Secret Password = tuna</strong>
+        </ngb-alert>
+      </p>
+        <div 
+          *ngFor = "let logItem of log; let i = index" 
+          [ngStyle]= "{backgroundColor: i >= 5 ? 'blue': 'red'}"
+          [ngClass]= "{whiteText : i >= 5}" > {{logItem}} 
+        </div>
+      <hr/>
+    </div>
+  </div>
+</div>
